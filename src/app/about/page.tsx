@@ -8,6 +8,8 @@ export default function AboutPage() {
       role: '팀장',
       desc: '기획 및 암호화 구현',
       photo: '/jihoon.jpg',
+      github: 'https://github.com/Hoodscp/Team_Crypto',
+      web: 'https://team-crypto.vercel.app/capsules',
     },
     {
       name: '이시훈',
@@ -15,6 +17,8 @@ export default function AboutPage() {
       role: '기능 구현',
       desc: '로그인 및 토큰 기능 구현',
       photo: '/sihoon.jpg',
+      github: 'https://github.com/KJB000/team_capsule',
+      web: 'https://team-capsule.vercel.app',
     },
     {
       name: '김기현',
@@ -22,6 +26,8 @@ export default function AboutPage() {
       role: '프론트엔드',
       desc: 'UI/UX 담당',
       photo: '/gihyeon.jpg',
+      github: 'https://github.com/Kimkihyeon02/time-capsule',
+      web: 'https://time-capsule-gamma.vercel.app/capsules',
     },
     {
       name: '천재권',
@@ -29,6 +35,8 @@ export default function AboutPage() {
       role: '백엔드',
       desc: 'DB 연결 담당',
       photo: '/jaegwon.jpg',
+      github: 'https://github.com/wornjss1002/crypto_final',
+      web: 'https://crypto-final-capsule.vercel.app/capsules',
     },
   ]
 
@@ -68,6 +76,24 @@ export default function AboutPage() {
               </div>
               <div className="text-base sm:text-lg text-gray-500 mt-2 sm:mt-3">
                 {member.desc}
+              </div>
+              <div className="flex gap-2 justify-center sm:justify-start mt-4">
+                <a
+                  href={member.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 text-sm"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={member.web}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 text-sm"
+                >
+                  Web
+                </a>
               </div>
             </div>
           </div>
